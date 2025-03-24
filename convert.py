@@ -448,7 +448,7 @@ def main():
     # Markdownディレクトリが存在しない場合は作成
     ensure_dir(MARKDOWN_DIR)
 
-    shutil.rmtree(OUTPUT_DIR, ignore_erros=True)
+    shutil.rmtree(OUTPUT_DIR, ignore_errors=True)
 
     # ファイルの変換
     entries = convert_markdown_files()
