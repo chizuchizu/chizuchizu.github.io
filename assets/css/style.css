@@ -1,0 +1,68 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// カスタムスタイル
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+footer {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    font-size: 0.8em;
+    color: #666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
