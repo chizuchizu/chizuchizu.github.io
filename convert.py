@@ -11,7 +11,7 @@ import re
 
 # 設定
 MARKDOWN_DIR = "diary"  # Markdownファイルが置かれるディレクトリ
-OUTPUT_DIR = "/"     # 出力先ディレクトリ（GitHub Pagesで使用）
+OUTPUT_DIR = "./"     # 出力先ディレクトリ（GitHub Pagesで使用）
 
 # ディレクトリが存在しない場合は作成
 def ensure_dir(directory):
