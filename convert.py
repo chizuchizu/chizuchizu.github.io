@@ -27,6 +27,8 @@ def convert_markdown_files():
     
     # すべてのMarkdownファイルを取得
     md_files = glob.glob(os.path.join(MARKDOWN_DIR, "*.md"))
+    print("=" * 10)
+    print(md_files)
     entries = []
     
     for md_file in md_files:
