@@ -33,7 +33,7 @@ jobs:
           python -m pip install markdown Pillow mdx_linkify python-markdown-math
 
       - name: Generate HTML files
-        run: python convert.py
+        run: python convert.py  && ls -la && pwd
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
