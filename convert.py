@@ -9,7 +9,6 @@ from datetime import datetime
 import shutil
 import re
 
-# 設定
 MARKDOWN_DIR = "diary"  # Markdownファイルが置かれるディレクトリ
 OUTPUT_DIR = "./"     # 出力先ディレクトリ（GitHub Pagesで使用）
 
