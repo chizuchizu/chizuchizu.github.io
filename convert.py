@@ -30,6 +30,7 @@ def convert_markdown_files():
     print("=" * 10)
     print(md_files)
     print(glob.glob("./*"))
+    print(glob.glob("./*/*"))
     entries = []
     
     for md_file in md_files:
