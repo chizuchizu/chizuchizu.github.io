@@ -3,7 +3,7 @@ name: Deploy Markdown Diary to GitHub Pages
 on:
   push:
     branches:
-      - main  # または master (リポジトリのデフォルトブランチに合わせる)
+      - master  # または master (リポジトリのデフォルトブランチに合わせる)
   workflow_dispatch:  # 手動実行のオプション
 
 permissions:
