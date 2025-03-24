@@ -29,6 +29,7 @@ def convert_markdown_files():
     md_files = glob.glob(os.path.join(MARKDOWN_DIR, "*.md"))
     print("=" * 10)
     print(md_files)
+    print(glob.glob("./"))
     entries = []
     
     for md_file in md_files:
