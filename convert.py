@@ -35,8 +35,13 @@ def convert_markdown_files():
         filename_without_ext = os.path.splitext(basename)[0]
         
         # 日付の抽出（diary-YYYY-MM-DD 形式を想定）
-        date_match = re.match(r'diary-(\d{4}-\d{2}-\d{2})', filename_without_ext)
-        date_str = date_match.group(1) if date_match else ''
+        # 日付の抽出を単純化（より確実に動作するように）
+        if filename_without_ext.startswith('diary-'):
+            date_str = filename_without_ext[6:]  # 'diary-' の後の部分を抽出
+        else:
+            date_str = ''
+        
+        print(f"処理中: {basename}, 抽出された日付: {date_str}")
         
         html_filename = filename_without_ext + ".html"
         output_path = os.path.join(OUTPUT_DIR, html_filename)
