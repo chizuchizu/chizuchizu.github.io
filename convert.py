@@ -448,14 +448,14 @@ def main():
     # Markdownディレクトリが存在しない場合は作成
     ensure_dir(MARKDOWN_DIR)
     
-    # 出力ディレクトリが存在する場合はクリーンアップ
-    if os.path.exists(OUTPUT_DIR):
-        for item in os.listdir(OUTPUT_DIR):
-            item_path = os.path.join(OUTPUT_DIR, item)
-            if os.path.isdir(item_path):
-                shutil.rmtree(item_path)
-            else:
-                os.remove(item_path)
+    # # 出力ディレクトリが存在する場合はクリーンアップ
+    # if os.path.exists(OUTPUT_DIR):
+    #     for item in os.listdir(OUTPUT_DIR):
+    #         item_path = os.path.join(OUTPUT_DIR, item)
+    #         if os.path.isdir(item_path):
+    #             shutil.rmtree(item_path)
+    #         else:
+    #             os.remove(item_path)
     
     # ファイルの変換
     entries = convert_markdown_files()
